@@ -1,4 +1,7 @@
 <?php
+
+use yii\bootstrap4\BootstrapAsset;
+
 $params = array_merge(
     require __DIR__ . '/../../common/config/params.php',
     require __DIR__ . '/../../common/config/params-local.php',
@@ -39,7 +42,7 @@ return [
         ],
         'assetManager' => [
             'bundles' => [
-                \yii\bootstrap4\BootstrapAsset::class => false,
+                BootstrapAsset::class => false,
             ]
         ],
         'urlManager' => [
